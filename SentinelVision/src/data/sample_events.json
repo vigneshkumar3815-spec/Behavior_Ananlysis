@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "timestamp": "00:02:10",
+    "entityId": "Person-3",
+    "type": "loitering",
+    "severity": "anomaly",
+    "message": "Stationary >10 min in restricted zone",
+    "confidence": 92
+  },
+  {
+    "id": 2,
+    "timestamp": "00:05:45",
+    "entityId": "Forklift-1",
+    "type": "speeding",
+    "severity": "warning",
+    "message": "Moving at high speed in pedestrian zone",
+    "confidence": 85
+  },
+  {
+    "id": 3,
+    "timestamp": "00:15:30",
+    "entityId": "Person-1",
+    "type": "normal",
+    "severity": "normal",
+    "message": "Walking in designated aisle",
+    "confidence": 98
+  }
+]
