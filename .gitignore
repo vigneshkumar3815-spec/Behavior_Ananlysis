@@ -1,0 +1,26 @@
+# Machine Learning Models
+*.pt
+*.pth
+*.onnx
+
+# Video Files
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Python Caches
+__pycache__/
+*.pyc
+
+# Uploads and Data
+uploads/
+data/
+
+# Environment Variables
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/

@@ -111,5 +111,14 @@ def set_source(req: SourceRequest):
     streamer.change_source(req.source)
     return {"status": "success", "message": f"Switched to source {req.source}"}
 
+class CustomRuleRequest(BaseModel):
+    rule: str
+    api_key: str = None
+
+@app.post("/api/custom_rule")
+def set_custom_rule(req: CustomRuleRequest):
+    streamer.detector.set_custom_rule(req.rule, req.api_key)
+    return {"status": "success", "message": f"Custom rule updated to: {req.rule}"}
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8002)
